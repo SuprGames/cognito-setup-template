@@ -1,0 +1,1 @@
+# Cognito IaC Setup Template
