@@ -1,0 +1,23 @@
+{
+  "name": "cognito-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "process.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuprGames/cognito-setup-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuprGames/cognito-setup-template/issues"
+  },
+  "homepage": "https://github.com/SuprGames/cognito-setup-template#readme",
+  "dependencies": {
+    "@types/node": "^14.14.22",
+    "typescript": "^4.1.3"
+  }
+}

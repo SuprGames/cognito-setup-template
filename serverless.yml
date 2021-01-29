@@ -1,8 +1,17 @@
 org: suprgames
-app: cognito-setup-template
-name: aws-lambda-starter
-component: aws-lambda
+app: suprgames-cognito
+service: cognito-test
 
-inputs:
-  src: ./src
-  handler: handler.handler
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: eu-central-1
+
+functions:
+  hello:
+    handler: src/handler.handler
+    events:
+      - httpApi: 
+          method: GET
+          path: /hello
