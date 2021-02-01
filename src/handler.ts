@@ -1,4 +1,5 @@
-import { HttpMethod, HttpFunction, Authorizer, AuthorizerType } from '../process'
+import { Authorizer, AuthorizerType } from './DSL/Authorizer'
+import { HttpFunction, HttpMethod } from './DSL/HttpFunction'
 
 //§DSL
 new HttpFunction({
