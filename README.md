@@ -6,3 +6,4 @@
 
 * serverless create --template aws-nodejs
 
+2) Generation of Serverless code using the following command: npm run generate
