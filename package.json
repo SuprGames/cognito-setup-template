@@ -2,9 +2,11 @@
   "name": "cognito-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "process.js",
+  "main": "lib/dsl-processor.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "ts-node dsl-processor.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
