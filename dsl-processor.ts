@@ -61,7 +61,37 @@ export class HttpFunction extends LambdaFunction {
     }
 }
 
+async function processCode(codeFolder: string): Promise<string> {
+    console.log(`\tProcessing code ${codeFolder}`)
+    console.log('')
+    return `
+\t\td
+\t\t  f
+\t\t  f
+\t\td
+    `
+}
+
+function updateServerlessFileFunctionSection(serverlessFile: string, functionContent: string): void {
+    console.log(`\tUpdating ${serverlessFile} file with folowing content`)
+    console.log()
+    console.log(functionContent)
+    console.log()
+    console.log('\tFile updated')
+    console.log()
+}
+
 //Processing side
 const codeFolder = 'src'
+const serverlessFile = 'serverless.yml'
+console.log()
+console.log('************************************************************************')
 console.log(`Serverless Framework DSL processor §`)
-console.log(`\tSource code folder: ${codeFolder}`)
+console.log()
+console.log(`\tSource code main folder: ${codeFolder}`)
+console.log()
+console.log()
+processCode(codeFolder).then((s) => {
+    updateServerlessFileFunctionSection(serverlessFile, s)
+    console.log('************************************************************************')
+})
