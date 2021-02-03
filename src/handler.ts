@@ -3,8 +3,10 @@ import { HttpFunction, HttpMethod } from '../dsl-processor'
 
 //§DSL
 new HttpFunction({
+    name: 'hello-world',
     method: HttpMethod.GET,
     path: '/hello',
+    cors: true,
     authorizer: new Authorizer({
         name: 'basic-auth-game-provider',
         resultTtlInSeconds: 0,
